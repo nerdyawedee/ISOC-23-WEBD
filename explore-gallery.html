@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/4a0046fff5.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./Assets/Logo.png" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<title>Form Reviews</title>
+  <link rel="stylesheet" href="./explore-gallery.css">
+  <title>ISOCeum</title>
+  <link rel="icon" type="image/x-icon" href="./Our Gallery/favicon.ico">
+</head>
+<body>
+    <header class="header" id="navbar">
+        <h1 class="logo"><a href="#"><span style="color:#7b00d3; font-size: 25pt;">ISOC</span>eum</a></h1>
+        <ul class="main-nav">
+          <li><a href="isoc.html" class="active">Home</a></li>
+          <li><a href="#con2">Category</a></li>
+          <li><a href="#see">Art & Stories</a></li>
+          <li><a href="calender.html">Add To Calendar</a></li>
+          <li class="language-option">
+            <div class="dropdown" id="google_translate_element" style="cursor: pointer;">
+              <span>Language | <strong>EN</strong></span>
+             
+              <!-- change "en" as per language -->
+              <div class="dropdown-content">
+                <p>English <img src="./Languages/USA.jpg"></p>
+                <p>French <img src="./Languages/France.jpg"></p>
+                <p>German <img src="./Languages/Germany.png"></p>
+                <p>Spanish <img src="./Languages/Spain.jpg"></p>
+              </div>
+            </div>
+           
+          </li>
+          <img src="Our Gallery/moon.png" id="icon">
+        </ul>
+        
+      </header>
+  
+  <div class="container" id="con2" >
+    <form class="filter">
+        <div class="item">
+            <label>Category</label>
+            <select name="Category">
+                <option value="">All</option>
+                <option value="Art">Art</option>
+                <option value="Jewellery">Jewellery</option>
+                <option value="Pottery">Pottery</option>
+            </select>
+        </div>
+        <div class="item">
+            <label>Rarity</label>
+            <select name="Rarity">
+                <option value="">All</option>
+                <option value="Common">Common</option>
+                <option value="Unique">Unique</option>
+                <option value="Rare">Rare</option>
+                <option value="Popular">Popular</option>
+                <!-- <option value="brown">brown</option> -->
+            </select>
+        </div>
+        <div class="item">
+            <label>Chronology</label>
+            <select name="Chronology">
+                <option value="">All</option>
+                <option value="Ancient">Ancient</option>
+                <option value="Medival">Medival</option>
+                <option value="Mordern">Mordern</option>
+                <option value="popular">Popular</option> 
+                <!-- <option value="brown">brown</option> -->
+            </select>
+         </div>  
+        <div class="item">
+            <label>Name</label>
+            <input name="name" type="text">
+        </div>
+        <div class="item">
+            <label>Min Price</label>
+            <input name="minPrice" type="number">
+        </div>
+        <div class="item">
+            <label>Max Price</label>
+            <input name="maxPrice" type="number">
+        </div>
+        <div class="item submit">
+            <button>Search</button>
+        </div>
+    </form>
+    <div class="countResults">
+        Found <b id="count">5</b> results
+    </div>
+    <div id="list">
+        
+    </div>
+</div>
+
+
+<!-- ........ -->
+<section class="sec" id="see">
+  <h style="text-align:center;display: inline-block;font-size: 25px;
+  font-weight: 800;margin-top: 50px;margin-left:40%;">ART AND STORIES</h>
+<div class="container2" id="contain2">
+  
+  <div class="imagess">
+    <img src="/ISOC-23-WEBD/Our Gallery/modern.png" alt="" >
+    <img src="/ISOC-23-WEBD/Our Gallery/Medival.png" alt="" >
+    <img src="/ISOC-23-WEBD/Our Gallery/popular.jpg" alt="" >
+    <img src="/ISOC-23-WEBD/Our Gallery/unique.png" alt="" >
+    <img src="/ISOC-23-WEBD/Our Gallery/common.png" alt="" >
+    <img src="/ISOC-23-WEBD/Our Gallery/Art.png" alt="" >
+  </div>
+</div>
+</section>
+<!-- ................................................. -->
+<section>
+  
+<div class="wrapper1">
+  <button class="feedback_btn send_btn">Send Your Feedback</button>
+  <div class="modal_wrapper">
+    <div class="shadow close_btn"></div>
+    
+    <div class="modal" >
+      <div class="close_btn">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      
+      <div class="header1"  >
+        <h3>Give Feedback</h3>
+        <p>What do you think of this software?</p>
+        
+        <div class="feedback_icons" >
+          <ul>
+            <li>
+              <i class="fa-regular fa-face-smile"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-face-smile-wink"></i>
+            </li>
+            <li>
+             <i class="fa-regular fa-face-kiss-beam"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-face-grin-hearts"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-face-meh-blank"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="body">
+        <p>Do you have any thoughts you'd like to share?</p>
+        <textarea class="textarea"></textarea>
+      </div>
+      <div class="footer1" style="margin-top:40px;top:40px;position:fixed; ">
+        <button class="send_btn" style="margin-right:220px; margin-top:40px;">Send</button>
+        <button class="cancel_btn" style="margin-left:235px;left:5px;margin-top:40px;">cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- .......................................... -->
+<footer>
+  <div class="wrap">
+      <div class="upper_side contents">
+          <ul class="flex">
+              <li class="first_depth">
+                  <p class="title">Learn-More</p>
+                  <ul class="second_depth">
+                          <li class="white">About-Us</li>
+                          <li><a href="#">Our Services</a></li>
+                          <li><a href="#">Case Studies</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">View-US</a></li>
+                          <li><a href="#">Contact -Us</a></li>
+                  </ul>
+              </li>
+              <li class="first_depth">
+                  <p class="title">Tickets&Booking</p>
+                  <ul class="second_depth">
+                          <li><a href="#">Upcoming Event</a></li>
+                          <li><a href="#">Book Ticket</a></li>
+                          <li><a href="#">Get Insight</a></li>
+                          <li><a href="#">Cancellation Policy</a></li>
+                  </ul>
+              </li>
+              <li class="first_depth">
+                  <p class="title">Social</p>
+                  <ul class="second_depth">
+                          <li><a href="#">Join Our Community</a></li>
+                          <li><a href="#">Share Your Experience</a></li>
+                          <li><a href="#">Refer A friend</a></li>
+                          <li><a href="#">Add to Calender</a></li>
+                  </ul>
+              </li>
+              <li class="first_depth">
+                  <p class="title">Social</p>
+                  <ul class="second_depth">
+                          <li><a href="#">FAQs</a></li>
+                          <li><a href="#">Store Locator</a></li>
+                          <li><a href="#">Missing Points?</a></li>
+                          <li><a href="#">Do Not Sell My Info</a></li>
+                  </ul>
+              </li>
+              <li class="first_depth">
+                  <p class="title">CONTACT</p>
+                  <ul class="second_depth">
+                      <li>
+                              <ul>
+                                  <li><a href="#">Contact Us</a></li>
+                              </ul>
+                      </li>
+                      <li>
+                          <em class="white">Address</em>
+                          <p>12345 Lal Building<br>New Delhi, India</br></p>
+                      </li>
+                      <li>
+                          <em class="white">Hours</em>
+                          <p>24-7</p>
+                      </li>	
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <div class="mid_side contents">
+          <ul class="flex">
+              <!-- <li>
+                  <p class="title">STORE LOCATOR</p>
+                  <ul class="second_depth">
+                      <li>
+                          <p>Find a Vans store near you</p>
+                          <button class="store">FIND A STORE</button>
+                      </li>
+                      <li></li>
+                  </ul>
+              </li> -->
+              <li>
+                  <p class="title">FOLLOW US</p>
+                  <ul class="second_depth flex sns">
+                      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+              </li>
+              <li>
+                  <p class="title">SUBSCRIBE</p>
+                  <ul class="second_depth">
+                      <li>
+                          <p>Sign up for our newsletter</p>
+                      </li>
+                      <li>
+                          <div class="input_box flex">
+                              <input type="text" placeholder="Email Address"/>
+                              <button><i class="fas fa-chevron-right"></i></button>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      <div class="copyright">
+          © 2020 Copyright:
+        &copy <script>document.write(new Date().getFullYear())</script> Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"
+            >MDBootstrap.com</a
+          >
+  </div>
+</footer>
+<script src="./explore-gallery.js"></script>
+</script>
+</body>
+</html>

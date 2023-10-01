@@ -3,15 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./Assets/Logo.png" sizes="64x64">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script
-      src="https://kit.fontawesome.com/e7492bef49.js"
+      src="page.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="page.css" />
-    <title>Exhibition</title>
+    <title>ISOCeum</title>
+    <link rel="icon" type="image/x-icon" href="./Our Gallery/favicon.ico">
   </head>
   <body>
     
+    <header class="header" id="navbar">
+      <h1 class="logo"><a href="#"><span style="color:#7b00d3; font-size: 25pt;">ISOC</span>eum</a></h1>
+      <ul class="main-nav"style="font-size:15px;font-weight:20px;">
+        <li><a href="isoc.html" class="active">Home</a></li>
+        <li><a href="#art">OUR-PAINTING</a></li>
+        <li><a href="#cheese-art">OUR-CRAFT</a></li>
+        <li><a href="#new-arrivals">NEW-ARRIVALS</a></li>
+        <li><a href="#me">VIEW</a></li>
+        <li class="language-option">
+          <div class="dropdown" id="google_translate_element" style="cursor: pointer;">
+            <span>Language | <strong>EN</strong></span>
+           
+            <!-- change "en" as per language -->
+            <div class="dropdown-content">
+              <p>English <img src="./Languages/USA.jpg"></p>
+              <p>French <img src="./Languages/France.jpg"></p>
+              <p>German <img src="./Languages/Germany.png"></p>
+              <p>Spanish <img src="./Languages/Spain.jpg"></p>
+            </div>
+          </div>
+         
+        </li>
+        <img src="Our Gallery/moon.png" id="icon">
+      </ul>
+      
+    </header>
 
     <section class="home" id="home">
       <div class="hero">
@@ -21,7 +50,7 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing.
           dgvwgcbhjushusncxu shbhbyx sbywd hwbdhbwydb
         </p>
-        <a href="" class="btn">Tickets</a>
+        <a href="" class="btn" style="margin-left: 20px;">Tickets</a>
       </div>
       <div class="image">
         <img
@@ -259,7 +288,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium
             </p>
-            <a class="btn">Explore</a>
+            <button id="explore-gallery" onclick="window.location.href='explore-gallery.html';">Explore </button>
           </div>
         </div>
 
@@ -276,7 +305,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium
             </p>
-            <a class="btn">Explore</a>
+            <button id="explore-gallery" onclick="window.location.href='explore-gallery.html';">Explore </button>
           </div>
         </div>
 
@@ -293,163 +322,160 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium
             </p>
-            <a class="btn">Explore</a>
+            <button id="explore-gallery" onclick="window.location.href='explore-gallery.html';">Explore </button>
           </div>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <!-- Grid container -->
-      <div class="footer-container">
-        <!-- Section: Social media -->
-        <section class="social-media">
-          <!-- Facebook -->
-          <a class="btn btn-social btn-facebook" href="#!" role="button">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <!-- Twitter -->
-          <a class="btn btn-social btn-twitter" href="#!" role="button">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <!-- Google -->
-          <a class="btn btn-social btn-google" href="#!" role="button">
-            <i class="fab fa-google"></i>
-          </a>
-          <!-- Instagram -->
-          <a class="btn btn-social btn-instagram" href="#!" role="button">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <!-- Linkedin -->
-          <a class="btn btn-social btn-linkedin" href="#!" role="button">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <!-- Github -->
-          <a class="btn btn-social btn-github" href="#!" role="button">
-            <i class="fab fa-github"></i>
-          </a>
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Newsletter Form -->
-        <section class="newsletter">
-          <form action="">
-            <!--Grid row-->
-            <div class="newsletter-row">
-              <!--Grid column-->
-              <div class="col-auto newsletter-text">
-                <p class="pt-2">
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                  <input
-                    type="email"
-                    id="newsletter-email"
-                    class="form-control"
-                  />
-                  <label class="form-label" for="newsletter-email"
-                    >Email address</label
-                  >
-                </div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-auto newsletter-button">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                  Subscribe
-                </button>
-              </div>
-              <!--Grid column-->
-            </div>
-            <!--Grid row-->
-          </form>
-        </section>
-        <!-- Section: Newsletter Form -->
-
-        <!-- Section: Text -->
-        <section class="footer-text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
-          </p>
-        </section>
-        <!-- Section: Text -->
-
-        <!-- Section: Footer Links -->
-        <section class="footer-links">
-          <!--Grid row-->
-          <div class="row1">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-
-          <div class="row2">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-
-          <div class="row3">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-
-          <div class="row4">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled mb-0">
-                <li><a href="#!" class="footer-link">Link 1</a></li>
-                <li><a href="#!" class="footer-link">Link 2</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-          </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Footer Links -->
+    <!-- ......................... -->
+    <section class="for" id="me">
+      <h1 class="title">View <span>Articraft</span></h1>
+    <div class="slideshow">
+      
+      <div class="slide">
+        <img src="./Our Gallery/Img-5.jpg" alt="">
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="copyright">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
+      <div class="slide">
+        <img src="./Our Gallery/Img-1.jpg" alt="">
       </div>
-      <!-- Copyright -->
-    </footer>
+      <div class="slide">
+        <img src="./Our Gallery/Img-2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/Img-3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/Img-5.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/Jewellery.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/common.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/rare.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/pottery.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/unique.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./Our Gallery/popular.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- ........................... -->
+  <footer>
+    <div class="wrap">
+        <div class="upper_side contents">
+            <ul class="flex">
+                <li class="first_depth">
+                    <p class="title1">Learn-More</p>
+                    <ul class="second_depth">
+                            <li class="white">About-Us</li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">View-US</a></li>
+                            <li><a href="#">Contact -Us</a></li>
+                    </ul>
+                </li>
+                <li class="first_depth">
+                    <p class="title1">Tickets&Booking</p>
+                    <ul class="second_depth">
+                            <li><a href="#">Upcoming Event</a></li>
+                            <li><a href="#">Book Ticket</a></li>
+                            <li><a href="#">Get Insight</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                    </ul>
+                </li>
+                <li class="first_depth">
+                    <p class="title1">Social</p>
+                    <ul class="second_depth">
+                            <li><a href="#">Join Our Community</a></li>
+                            <li><a href="#">Share Your Experience</a></li>
+                            <li><a href="#">Refer A friend</a></li>
+                            <li><a href="#">Add to Calender</a></li>
+                    </ul>
+                </li>
+                <li class="first_depth">
+                    <p class="title1">Social</p>
+                    <ul class="second_depth">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">Missing Points?</a></li>
+                            <li><a href="#">Do Not Sell My Info</a></li>
+                    </ul>
+                </li>
+                <li class="first_depth">
+                    <p class="title1">CONTACT</p>
+                    <ul class="second_depth">
+                        <li>
+                                <ul>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <em class="white1">Address</em>
+                            <p>12345 Lal Building<br>New Delhi, India</br></p>
+                        </li>
+                        <li>
+                            <em class="white1">Hours</em>
+                            <p>24-7</p>
+                        </li>	
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mid_side contents">
+            <ul class="flex">
+                <!-- <li>
+                    <p class="title">STORE LOCATOR</p>
+                    <ul class="second_depth">
+                        <li>
+                            <p>Find a Vans store near you</p>
+                            <button class="store">FIND A STORE</button>
+                        </li>
+                        <li></li>
+                    </ul>
+                </li> -->
+                <li>
+                    <p class="title1">FOLLOW US</p>
+                    <ul class="second_depth flex sns">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="title1">SUBSCRIBE</p>
+                    <ul class="second_depth">
+                        <li>
+                            <p>Sign up for our newsletter</p>
+                        </li>
+                        <li>
+                            <div class="input_box flex">
+                                <input type="text" placeholder="Email Address"/>
+                                <button><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">
+            © 2020 Copyright:
+          &copy <script>document.write(new Date().getFullYear())</script> Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"
+              >MDBootstrap.com</a
+            >
+    </div>
+</footer>
     <!-- Footer -->
+    <script src="page.js"></script>
   </body>
 </html>

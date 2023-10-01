@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>ISOCeum</title>
+</head>
+<style>
+     body{
+        display:grid;
+        place-items: center;
+        width:100%;
+        height:100vh;
+        background-image: linear-gradient( 
+    to bottom right, #d6a4e0, #7e84f7);
+     }
+     *{
+        box-sizing: border-box;
+     }
+     .container{
+        border-radius: 5px;
+        background-color: rgb(216, 237, 139);
+        padding:20px;
+        height:700px;
+        width:500px;
+     }
+     .container i{
+        margin-left:400px;
+        cursor:pointer;
+     }
+     
+     input[type=text],textarea{
+        width:100%;
+        padding:12px;
+        border:1px solid #ccc;
+        border-radius:4px;
+        box-sizing: border-box;
+        margin-top:6px;
+        margin-bottom:16px;
+        resize:vertical;
+     }
+     input[type=button]{
+        background-color: rgb(35, 120, 55);
+        color:aliceblue;
+        padding:12px 20px;
+        border:none;
+        border-radius:4px;
+        cursor:pointer;
+        margin-left:180px;
+     }
+     input[type=button]:hover{
+        background-color: rgb(29, 116, 50);
+        color:rgba(240, 248, 255, 0.69);
+     }
+    
+</style>
+<body>
+    
+    <div class="container">
+        <a href="isoc.html">
+            <i class="fa fa-close" style="font-size:48px;color:rgba(37, 37, 37, 0.375)"></i>
+            </a>
+        <form action="">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Enter Your Name">
+
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Enter Your Email">
+
+            <label for="Contact">Contact</label>
+            <input type="text" id="Contact" placeholder="Enter Your Contact">
+
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" placeholder="Enter Your Subject...">
+
+            <label for="Message">Message</label>
+           <textarea name="" id="Message" placeholder="Enter Your Message...." style="height: 200px;"></textarea>
+           <input type="button" value="Submit" onclick="Send()">
+
+           
+        </form>
+        
+    </div>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+    <script>
+       function Send(){
+        var Name =document.getElementById("Name").value;
+        var Email =document.getElementById("Email").value;
+        var Contact=document.getElementById("Contact").value;
+        var Subject =document.getElementById("Subject").value;
+        var Message =document.getElementById("Message").value;
+
+        var body ="Name: " + Name+ "<br/> Email: " +Email+"<br/> Contact: " +Contact+"<br/> Subject: " +Subject+"<br/> Message: " +Message; 
+        Email.Send({
+            SecureToken:"",
+            To:"",
+            From:"",
+            Subject:Subject,
+            Body:body
+        }).then(
+            message =>{
+                if(Message=='OK'){
+                    swal("Thank You","Your Response is Captured..","success");
+                }
+                else{
+                    swal("Something is wrong","Your Response is not Captured..","error");
+                }
+            }
+        );
+       }
+//        let closeBtn = document.querySelector('#close-btn');
+// let card = document.querySelector('.container');
+// let closeLink = document.querySelector('.close-link');
+
+
+// closeBtn.addEventListener('click', ()=>{0
+//     card.classList.add('close');
+// })
+
+// closeLink.addEventListener('click', ()=>{
+//     card.classList.add('close');
+// })
+
+    </script>
+</body>
+</html>
